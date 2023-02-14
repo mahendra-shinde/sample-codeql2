@@ -61,7 +61,7 @@ jobs:
 
     - run: |
        echo "Run, Build Application using script"
-       mvn package -DskipTests -f demo1/pom.xml
+       mvn package -DskipTests 
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
